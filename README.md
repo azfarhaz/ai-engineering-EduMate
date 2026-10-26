@@ -124,3 +124,6 @@ Specific technologies will be selected and refined in later topics. Current cand
 |---|---|---|---|
 | W1 | Project scoping and GitHub setup | README and project scope | Complete |
 | W2 | Requirements, evaluation planning, and V1 architecture | Requirements, evaluation criteria, V1 architecture, ADR, and traceability matrix | Complete |
+
+
+haziem was here
