@@ -23,19 +23,19 @@ Existing learning resources do not always provide interactive explanations, whil
 
 ## Project Objectives
 
-- **O1:** Design an AI learning assistant that answers questions using selected course materials.
-- **O2:** Develop a RAG-based system with semantic search and document retrieval.
-- **O3:** Evaluate answer correctness, source relevance, groundedness, and response time.
+- **O1:** To design an AI learning assistant that answers questions using selected course materials.
+- **O2:** To develop a RAG-based system with semantic search and document retrieval.
+- **O3:** To evaluate answer correctness, source relevance, groundedness and response time.
 
 ## Target Users
 
-Undergraduate university students, initially focusing on selected computing and engineering subjects.
+Undergraduate university students, focusing on selected computing and engineering subjects.
 
 ## Application Scope
 
-**Supported tasks:** process PDF course materials, answer natural-language questions, explain concepts in simple language, summarise a specified section or topic, show source references, and say when the materials do not contain enough evidence.
+**Supported tasks:** process PDF course materials, answer natural-language questions, explain concepts in simple language, summarise a specified section or topic, show source references and say when the materials do not contain enough evidence.
 
-**Out of scope:** academic advising or course registration, answering from knowledge outside the indexed materials, completing graded assignments or exams, medical/legal/financial/mental health advice, and replacing lecturers or original textbooks.
+**Out of scope:** academic advising or course registration, answering from knowledge outside the indexed materials, completing graded assignments or exams, medical/legal/financial/mental health advice and replacing lecturers or original textbooks.
 
 ## Main Features
 
@@ -124,4 +124,3 @@ Specific technologies will be selected and refined in later topics. Current cand
 |---|---|---|---|
 | W1 | Project scoping and GitHub setup | README and project scope | Complete |
 | W2 | Requirements, evaluation planning, and V1 architecture | Requirements, evaluation criteria, V1 architecture, ADR, and traceability matrix | Complete |
-| W3 onwards | System development and testing | Prototype and evaluation results | Planned |
