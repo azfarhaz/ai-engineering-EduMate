@@ -1,0 +1,17 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-13T08:59:24.179513+00:00",
+  "records": [
+    {
+      "source_id": "S01",
+      "source_filename": "Introduction_to_Python_Programming-WEB.pdf",
+      "source_sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+      "prepared_output": "data\\processed\\prepared_text.jsonl",
+      "prepared_sha256": "902a5db3535f81f56e8dd907a9d497b2ad7626b9782de52e73a2bc577ce0d4be",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    }
+  ]
+}
