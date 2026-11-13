@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-13T08:59:55.449380+00:00",
+  "data_type": "documents",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "processing_method": "paragraph-aware text chunks of 500 characters",
+  "sources": [
+    {
+      "path": "d:\\torch-gpu\\ai-engineering-EduMate\\notebooks\\week3_project\\data\\raw\\Introduction_to_Python_Programming-WEB.pdf",
+      "sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d"
+    }
+  ],
+  "outputs": [
+    "d:\\torch-gpu\\ai-engineering-EduMate\\notebooks\\week3_project\\data\\pipeline_v1\\documents\\prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "d:\\torch-gpu\\ai-engineering-EduMate\\notebooks\\week3_project\\data\\raw\\Introduction_to_Python_Programming-WEB.pdf",
+      "output": "d:\\torch-gpu\\ai-engineering-EduMate\\notebooks\\week3_project\\data\\pipeline_v1\\documents\\prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "Introduction_to_Python_Programming-WEB.pdf",
+    "characters": 558088,
+    "pages": 397
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "519e9afc1febe3881d186b8876a190bcf8fd2f2b53b04b682bc47abd4b70936a"
+    ],
+    "output_bytes": [
+      764531
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}
