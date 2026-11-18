@@ -134,4 +134,4 @@ Specific technologies will be selected and refined in later topics. Current cand
 | W1 | Project scoping and GitHub setup | README and project scope | Complete |
 | W2 | Requirements, evaluation planning, and V1 architecture | Requirements, evaluation criteria, V1 architecture, ADR, and traceability matrix | Complete |
 | W3 | Data inventory and V1 data pipeline | Data inventory, pipeline notebook, pipeline diagram, pipeline decisions, and lineage manifests | Complete |
-| W4 onwards | System development and testing | Prototype and evaluation results | Planned |
+
