@@ -1,6 +1,6 @@
 # Data Quality & Bias Report — EduMate (Week 4)
 
-Author: [add your name and student ID]
+Author: Muhammad Haziem Azfar Bin Mohd Ransaimon (A24AI0057)
 
 **Evidence labels:** **Observed** (seen in a file, output, or code), **Inferred risk** (plausible, not tested), **N.V.** (Not Verified, with the smallest next check). **Evidence limit:** only three chunks were inspected by hand (below the 10–20 recommended), so most findings are counts, code inspection, or N.V.
 
@@ -52,7 +52,13 @@ Author: [add your name and student ID]
 
 ## 5. Bias Assessment
 
-**Pipeline-induced risk (Inferred).** *Preparation decision:* text-only extraction, whitespace cleaning, no footer removal, fixed 500-character cutting. → *Gap:* plain prose survives well, while code layout, formulas, and tables are partly degraded, and 187 chunks carry boilerplate. → *Effect:* retrieval and generation may serve definition-style questions better than code, table, or formula questions, giving uneven quality by question type. → *Action:* add code, table, and formula questions to the evaluation set, report results by question type, strip footers, and review table and code chunks.
+**Pipeline-induced risk (Inferred).** *Preparation decision:* text-only extraction, whitespace cleaning, no footer removal, fixed 500-character cutting. 
+
+→ *Gap:* plain prose survives well, while code layout, formulas, and tables are partly degraded, and 187 chunks carry boilerplate. 
+
+→ *Effect:* retrieval and generation may serve definition-style questions better than code, table, or formula questions, giving uneven quality by question type. 
+
+→ *Action:* add code, table, and formula questions to the evaluation set, report results by question type, strip footers, and review table and code chunks.
 
 **Representation risk (Inferred).** Only one textbook was processed, so the application covers one subject and one teaching style. This is a scope limit, not proven unfairness. Action: state the scope in the interface and add a second approved source when permission is clear.
 
