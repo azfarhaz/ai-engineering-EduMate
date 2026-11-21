@@ -1,6 +1,6 @@
 # EduMate — AI-Powered Course Material Learning Assistant
 
-> EduMate helps university students understand course materials by answering questions and explaining concepts using AI with every answer grounded in the selected documents and supported by source references.
+> EduMate helps university students understand course materials by answering questions and explaining concepts using AI, with every answer grounded in the selected documents and supported by source references.
 
 ## Problem Statement
 
@@ -19,13 +19,13 @@ University students often struggle to understand complex concepts and find speci
 
 ## Engineering Gap / Limitation
 
-Existing learning resources do not always provide interactive explanations, while general-purpose AI assistants may generate answers that are not supported by the student's course materials. EduMate aims to provide document-grounded answers, simplified explanations and source references. This is a practical engineering gap and not a claim of scientific novelty.
+Existing learning resources do not always provide interactive explanations, while general-purpose AI assistants may generate answers that are not supported by the student's course materials. EduMate aims to provide document-grounded answers, simplified explanations, and source references. This is a practical engineering gap, not a claim of scientific novelty.
 
 ## Project Objectives
 
-- **O1:** To design an AI learning assistant that answers questions using selected course materials.
-- **O2:** To develop a RAG-based system with semantic search and document retrieval.
-- **O3:** To evaluate answer correctness, source relevance, groundedness and response time.
+- **O1:** Design an AI learning assistant that answers questions using selected course materials.
+- **O2:** Develop a RAG-based system with semantic search and document retrieval.
+- **O3:** Evaluate answer correctness, source relevance, groundedness, and response time.
 
 ## Target Users
 
@@ -33,9 +33,9 @@ Undergraduate university students, initially focusing on selected computing and 
 
 ## Application Scope
 
-**Supported tasks:** process PDF course materials, answer natural-language questions, explain concepts in simple language, summarise a specified section or topic, show source references and say when the materials do not contain enough evidence.
+**Supported tasks:** process PDF course materials, answer natural-language questions, explain concepts in simple language, summarise a specified section or topic, show source references, and say when the materials do not contain enough evidence.
 
-**Out of scope:** academic advising or course registration, answering from knowledge outside the indexed materials, completing graded assignments or exams, medical/legal/financial/mental health advice and replacing lecturers or original textbooks.
+**Out of scope:** academic advising or course registration, answering from knowledge outside the indexed materials, completing graded assignments or exams, medical/legal/financial/mental health advice, and replacing lecturers or original textbooks.
 
 ## Main Features
 
@@ -52,7 +52,7 @@ Undergraduate university students, initially focusing on selected computing and 
 - [OpenStax College Physics 2e](https://openstax.org/details/books/college-physics-2e)
 - [OpenStax textbook collection](https://openstax.org/subjects)
 - [OpenStax Higher Education](https://openstax.org/higher-education)
-- Additional publicly accessible textbooks relevant to the selected subject will be documented before implementation. Exact titles, editions and access permissions will be confirmed before use.
+- Additional publicly accessible textbooks relevant to the selected subject will be documented before implementation. Exact titles, editions, and access permissions will be confirmed before use.
 
 ## Requirements Summary
 
@@ -126,6 +126,18 @@ Specific technologies will be selected and refined in later topics. Current cand
 | [`data/week3_manifest.json`](data/week3_manifest.json) | Part B lineage manifest (source-to-output checksums) |
 | [`data/pipeline_v1/documents/prepared_text.jsonl`](data/pipeline_v1/documents/prepared_text.jsonl) | Prepared text chunks from the Part C pipeline |
 | [`data/pipeline_v1/documents/pipeline_manifest.json`](data/pipeline_v1/documents/pipeline_manifest.json) | Part C pipeline run manifest and provenance |
+| [`docs/week4_data_quality_report.md`](docs/week4_data_quality_report.md) | Data quality and bias audit report with quality-gate decision |
+
+## Data Quality Gate (Week 4)
+
+Full report: [`docs/week4_data_quality_report.md`](docs/week4_data_quality_report.md).
+
+- **Decision:** GO WITH CONDITIONS for the Part C prepared text from *Introduction to Python Programming*, for coursework prototype development only.
+- **Unresolved actions:**
+  - Strip repeated footer text (187 of 1,117 chunks) and add a page or section locator to each chunk.
+  - Check whether OpenStax restricts AI use of this book and obtain permission or lecturer confirmation before sending any chunk to a model service.
+  - Record the download date and edition in the manifest.
+  - Complete the checks marked N.V.: duplicate count and an accuracy spot-check of 10–20 chunks against the PDF.
 
 ## Weekly Progress
 
@@ -134,4 +146,5 @@ Specific technologies will be selected and refined in later topics. Current cand
 | W1 | Project scoping and GitHub setup | README and project scope | Complete |
 | W2 | Requirements, evaluation planning, and V1 architecture | Requirements, evaluation criteria, V1 architecture, ADR, and traceability matrix | Complete |
 | W3 | Data inventory and V1 data pipeline | Data inventory, pipeline notebook, pipeline diagram, pipeline decisions, and lineage manifests | Complete |
-
+| W4 | Data quality and bias audit | Data quality report with quality-gate decision | Complete |
+| W5 onwards | System development and testing | Prototype and evaluation results | Planned |
